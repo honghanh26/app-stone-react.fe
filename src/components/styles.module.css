@@ -1,0 +1,25 @@
+.divider {
+  height: 1px;
+  display: block;
+  background-color: rgb(8 52 162);
+  margin: 6px 0 16px 0;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0.1em;
+}
+
+span.widgetTitle {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #050984;
+}
+
+.widget .divider {
+  margin-top: 1px;
+}
+
+.section-title-center span {
+  margin: 0 40px;
+  font-size: 30px;
+  color: #000;
+}
