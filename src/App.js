@@ -11,27 +11,162 @@ import { granite, marble, categoryGranite, serviceStone } from "./constants";
 
 function App() {
   const introSection = useRef(null);
+  const graniteSection = useRef(null);
+  const marbleSection = useRef(null);
+  const categorySection = useRef(null);
+  const serviceSection = useRef(null);
+  const contactSection = useRef(null);
 
   return (
     <div className="App">
-      <Header />
+      <Header
+        introRef={introSection}
+        graniteRef={graniteSection}
+        marbleRef={marbleSection}
+        categoryRef={categorySection}
+        serviceRef={serviceSection}
+        contactRef={contactSection}
+      />
       <main className="bg-white">
         <div className="container mx-auto">
-          <Title title="GIỚI THIỆU" />
-          <div className="row" ref={introSection}>
+          <Title title="GIỚI THIỆU" ref={introSection} />
+          <div className="row">
             <div className="col small-12 large-12">
-              <div className="col-inner">Chi tiết giới thiệu công ty</div>
+              <div className="col-inner">
+                <p>
+                  Enim assumenda sed fusce sint quos id officia, adipisicing.
+                  Fermentum vel bibendum! Sunt habitasse! Morbi corrupti
+                  officia! Consectetuer? Fuga nullam! Dicta tortor quidem mi
+                  corrupti varius fermentum quam nobis dui pharetra viverra
+                  aliquid, incidunt, aperiam faucibus. Error perferendis saepe,
+                  nullam convallis eum, sit. Tristique, feugiat purus
+                  consequuntur blanditiis eius quam dui litora adipisicing
+                  congue explicabo mauris, recusandae platea eget mattis amet
+                  assumenda inceptos sociosqu earum rhoncus risus felis,
+                  vehicula congue. Placerat, parturient sint sequi excepturi
+                  elementum, vestibulum, consectetur. Hendrerit, perferendis,
+                  potenti. Accumsan parturient et ad, atque repellendus nullam
+                  quisque ex hendrerit explicabo harum qui blandit atque minim
+                  nisi libero delectus.
+                </p>
+
+                <p>
+                  Autem quo? Laudantium integer proident hendrerit pariatur
+                  corporis laboriosam debitis mollis tellus proident phasellus,
+                  necessitatibus. Luctus tempore nisi rhoncus ea animi rhoncus
+                  delectus similique quod aptent unde cillum congue blandit
+                  lacinia asperiores. Blanditiis hac eu? Accumsan venenatis
+                  feugiat, nobis iusto pretium parturient torquent pretium
+                  adipiscing dolorem itaque maxime eveniet vestibulum leo, optio
+                  aut suspendisse suscipit consectetuer taciti volutpat tellus
+                  impedit? Ultricies beatae inceptos, sollicitudin, curae montes
+                  praesentium molestiae quam est, irure est bibendum repudiandae
+                  adipisicing similique esse auctor hymenaeos quos, occaecati?
+                  Perferendis lacus fermentum! Lacinia, porro porttitor
+                  consequat volutpat lacinia? Ante rhoncus. Eveniet saepe
+                  consequatur dui, iste eget rhoncus! Eget.
+                </p>
+
+                <p>
+                  Elementum viverra delectus natoque officia tenetur explicabo
+                  posuere ut commodo senectus mattis morbi feugiat? Montes
+                  exercitation! Cras habitant deserunt wisi torquent nostra
+                  accusantium quibusdam accusantium lacus facilisis non!
+                  Officiis porta maxime, duis quae eu quisque eligendi, sociosqu
+                  ullamco justo pede soluta blanditiis, tenetur aenean, deleniti
+                  aliquet luctus laudantium. Quisque vehicula fames, sapien
+                  natoque mus proident corrupti. Minus tempore, possimus
+                  expedita magnam eveniet! Consequuntur ea? Impedit dolorum
+                  autem cillum cillum nostrum! Earum nemo, dictum, magna omnis
+                  assumenda aenean, eum quia aut velit wisi? Dolores metus!
+                  Consequatur? Dis quod natoque? Condimentum, officia minus
+                  corrupti. Bibendum aliquip tempus, perferendis! Euismod fuga!
+                  Luctus dignissim.
+                </p>
+              </div>
             </div>
           </div>
-          <Title title="ĐÁ GRANITE" />
+          <Title title="ĐÁ GRANITE" ref={graniteSection} />
           <div className="row">
             <div className="col small-12 large-12">
               <div className="col-inner">
                 <ul className="mb-0">
-                  <li>Thông tin về đá Granite</li>
-                  <li>Ưu</li>
-                  <li>Nhược</li>
-                  <li>Ứng dụng</li>
+                  <li>
+                    <p>
+                      Enim assumenda sed fusce sint quos id officia,
+                      adipisicing. Fermentum vel bibendum! Sunt habitasse! Morbi
+                      corrupti officia! Consectetuer? Fuga nullam! Dicta tortor
+                      quidem mi corrupti varius fermentum quam nobis dui
+                      pharetra viverra aliquid, incidunt, aperiam faucibus.
+                      Error perferendis saepe, nullam convallis eum, sit.
+                      Tristique, feugiat purus consequuntur blanditiis eius quam
+                      dui litora adipisicing congue explicabo mauris, recusandae
+                      platea eget mattis amet assumenda inceptos sociosqu earum
+                      rhoncus risus felis, vehicula congue. Placerat, parturient
+                      sint sequi excepturi elementum, vestibulum, consectetur.
+                      Hendrerit, perferendis, potenti. Accumsan parturient et
+                      ad, atque repellendus nullam quisque ex hendrerit
+                      explicabo harum qui blandit atque minim nisi libero
+                      delectus.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Enim assumenda sed fusce sint quos id officia,
+                      adipisicing. Fermentum vel bibendum! Sunt habitasse! Morbi
+                      corrupti officia! Consectetuer? Fuga nullam! Dicta tortor
+                      quidem mi corrupti varius fermentum quam nobis dui
+                      pharetra viverra aliquid, incidunt, aperiam faucibus.
+                      Error perferendis saepe, nullam convallis eum, sit.
+                      Tristique, feugiat purus consequuntur blanditiis eius quam
+                      dui litora adipisicing congue explicabo mauris, recusandae
+                      platea eget mattis amet assumenda inceptos sociosqu earum
+                      rhoncus risus felis, vehicula congue. Placerat, parturient
+                      sint sequi excepturi elementum, vestibulum, consectetur.
+                      Hendrerit, perferendis, potenti. Accumsan parturient et
+                      ad, atque repellendus nullam quisque ex hendrerit
+                      explicabo harum qui blandit atque minim nisi libero
+                      delectus.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Enim assumenda sed fusce sint quos id officia,
+                      adipisicing. Fermentum vel bibendum! Sunt habitasse! Morbi
+                      corrupti officia! Consectetuer? Fuga nullam! Dicta tortor
+                      quidem mi corrupti varius fermentum quam nobis dui
+                      pharetra viverra aliquid, incidunt, aperiam faucibus.
+                      Error perferendis saepe, nullam convallis eum, sit.
+                      Tristique, feugiat purus consequuntur blanditiis eius quam
+                      dui litora adipisicing congue explicabo mauris, recusandae
+                      platea eget mattis amet assumenda inceptos sociosqu earum
+                      rhoncus risus felis, vehicula congue. Placerat, parturient
+                      sint sequi excepturi elementum, vestibulum, consectetur.
+                      Hendrerit, perferendis, potenti. Accumsan parturient et
+                      ad, atque repellendus nullam quisque ex hendrerit
+                      explicabo harum qui blandit atque minim nisi libero
+                      delectus.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Enim assumenda sed fusce sint quos id officia,
+                      adipisicing. Fermentum vel bibendum! Sunt habitasse! Morbi
+                      corrupti officia! Consectetuer? Fuga nullam! Dicta tortor
+                      quidem mi corrupti varius fermentum quam nobis dui
+                      pharetra viverra aliquid, incidunt, aperiam faucibus.
+                      Error perferendis saepe, nullam convallis eum, sit.
+                      Tristique, feugiat purus consequuntur blanditiis eius quam
+                      dui litora adipisicing congue explicabo mauris, recusandae
+                      platea eget mattis amet assumenda inceptos sociosqu earum
+                      rhoncus risus felis, vehicula congue. Placerat, parturient
+                      sint sequi excepturi elementum, vestibulum, consectetur.
+                      Hendrerit, perferendis, potenti. Accumsan parturient et
+                      ad, atque repellendus nullam quisque ex hendrerit
+                      explicabo harum qui blandit atque minim nisi libero
+                      delectus.
+                    </p>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -45,7 +180,7 @@ function App() {
               </div>
             </div>
           </div>
-          <Title title="ĐÁ MARBLE" />
+          <Title title="ĐÁ MARBLE" ref={marbleSection} />
           <div className="row">
             <div className="col small-12 large-12">
               <div className="col-inner">
@@ -67,7 +202,7 @@ function App() {
               </div>
             </div>
           </div>
-          <Title title="HẠNG MỤC ĐÁ ỐP LÁT" />
+          <Title title="HẠNG MỤC ĐÁ ỐP LÁT" ref={categorySection} />
           <div className="row">
             <div className="col small-12 large-12">
               <div className="col-inner">
@@ -84,7 +219,7 @@ function App() {
               </div>
             </div>
           </div>
-          <Title title="DỊCH VỤ NGÀNH ĐÁ" />
+          <Title title="DỊCH VỤ NGÀNH ĐÁ" ref={serviceSection} />
           <div className="row">
             <div className="col small-12 large-12">
               <div className="col-inner">
@@ -117,7 +252,7 @@ function App() {
               </div>
             </div>
           </div>
-          <Title title="LIÊN HỆ" />
+          <Title title="LIÊN HỆ" ref={contactSection} />
           <div className="row">
             <div className="col small-12 large-12">
               <div className="col-inner">

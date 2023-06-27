@@ -1,27 +1,27 @@
 export const categories = [
   {
     title: "Giới Thiệu",
-    url: "introSection",
+    url: "introRef",
   },
   {
     title: "Đá Granite",
-    url: "graniteSection",
+    url: "graniteRef",
   },
   {
     title: "Đá Marble",
-    url: "/products",
+    url: "marbleRef",
   },
   {
     title: "Hạng mục ốp đá",
-    url: "/products",
+    url: "categoryRef",
   },
   {
     title: "Dịch vụ",
-    url: "/products",
+    url: "serviceRef",
   },
   {
     title: "Liên Hệ",
-    url: "/products",
+    url: "contactRef",
   },
 ];
 

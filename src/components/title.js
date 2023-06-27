@@ -1,10 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
 import styles from "./styles.module.css";
 
-export default function Title({ title }) {
+export default forwardRef(function Title({ title }, ref) {
   return (
-    <div className="row row-collapse align-equal align-center">
+    <div ref={ref} className="row row-collapse align-equal align-center">
       <div className="col medium-3 small-1 large-3">
         <div className="col-inner" />
       </div>
@@ -27,4 +27,4 @@ export default function Title({ title }) {
       </div>
     </div>
   );
-}
+})
