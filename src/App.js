@@ -1,11 +1,19 @@
 import { useRef } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
+import "./assets/css/callNow-22950065d5743df4ac43858dc53777e9.css";
 
 import Header from "./components/header";
 import Title from "./components/title";
 import Item from "./components/item";
 import TypeItem from "./components/typeitem";
 import NewsItem from "./components/newsitem";
+
+import banner1 from "./assets/img/banner-1.jpeg";
+import banner2 from "./assets/img/banner-2.jpeg";
+import banner3 from "./assets/img/banner-3.jpeg";
 
 import { granite, marble, categoryGranite, serviceStone } from "./constants";
 
@@ -16,6 +24,15 @@ function App() {
   const categorySection = useRef(null);
   const serviceSection = useRef(null);
   const contactSection = useRef(null);
+
+  const settings = {
+    autoplay: true,
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   return (
     <div className="App">
@@ -28,6 +45,13 @@ function App() {
         contactRef={contactSection}
       />
       <main className="bg-white">
+        <div className="mb-3">
+          <Slider {...settings}>
+            <img src={banner1} data-src={banner1} alt="Banner 1" />
+            <img src={banner2} data-src={banner2} alt="Banner 2" />
+            <img src={banner3} data-src={banner3} alt="Banner 3" />
+          </Slider>
+        </div>
         <div className="container mx-auto">
           <Title title="GIỚI THIỆU" ref={introSection} />
           <div className="row">
@@ -243,9 +267,9 @@ function App() {
               <div className="col-inner">
                 <div className="row large-columns-4 medium-columns-1 small-columns-2 has-shadow row-box-shadow-1 row-box-shadow-2-hover">
                   <NewsItem
-                    title="Giới Thiệu Về Công Ty ATC stone"
-                    img="https://atcstone.vn/wp-content/uploads/2021/08/MAU-DA-QUARTZ-TU-NHIEN-2-1-537x400.jpg"
-                    desc="Giới Thiệu Về Công Ty Đá Hoa Cương Cao Cấp ATC stone "
+                    title="BÁN ĐÁ HOA CƯƠNG CAO CẤP"
+                    img="https://atcstone.vn/wp-content/uploads/2023/02/BAN-DA-HOA-CUONG-CAO-CAP-1-600x375.jpg"
+                    desc="“Ở đâu bán đá hoa cương cao cấp chất lượng” là câu "
                     zoom={true}
                   />
                 </div>
@@ -321,6 +345,33 @@ function App() {
           </div>
         </div>
       </main>
+      <div className="hotline-phone-ring-wrap">
+        <div className="hotline-phone-ring">
+          <div className="hotline-phone-ring-circle" />
+          <div className="hotline-phone-ring-circle-fill" />
+          <div className="hotline-phone-ring-img-circle">
+            {" "}
+            <a href="tel:0908099419" className="pps-btn-img">
+              {" "}
+              <img
+                src="https://atcstone.vn/wp-content/plugins/floating-click-to-contact-buttons/phone.png"
+                alt="Gọi điện thoại"
+                width={50}
+                data-lazy-src="https://atcstone.vn/wp-content/plugins/floating-click-to-contact-buttons/phone.png"
+                className="lazyloaded"
+                data-was-processed="true"
+              />{" "}
+            </a>
+          </div>
+        </div>{" "}
+        <div className="hotline-bar">
+          <a href="tel:0908099419"> </a>
+          <a href="tel:0908099419">
+            {" "}
+            <span className="text-hotline">0908 099 419</span>{" "}
+          </a>
+        </div>{" "}
+      </div>
     </div>
   );
 }

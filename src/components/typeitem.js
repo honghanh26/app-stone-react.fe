@@ -9,26 +9,21 @@ export default function TypeItem({ title, img }) {
           <div className="box-image">
             <div className="image-zoom">
               {" "}
-              <a href="https://atcstone.vn/da-granite-magma-gold-3/">
-                {" "}
-                <img
-                  width={450}
-                  height={338}
-                  src={img}
-                  data-src={img}
-                  className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail lazy-load-active"
-                  alt={title}
-                  loading="lazy"
-                />
-              </a>
+              <img
+                width={450}
+                height={338}
+                src={img}
+                data-src={img}
+                className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail lazy-load-active"
+                alt={title}
+                loading="lazy"
+              />
             </div>
           </div>
           <div className="box-text box-text-products text-center grid-style-2">
             <div className="title-wrapper">
               <p className="name product-title woocommerce-loop-product__title h-6">
-                <a href="https://atcstone.vn/da-granite-magma-gold-3/">
-                  {title}
-                </a>
+                {title}
               </p>
             </div>
             <div className="price-wrapper h-0" />
