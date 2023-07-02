@@ -120,7 +120,7 @@ function App() {
           </div>
           <Title title="ĐÁ GRANITE" ref={graniteSection} />
           <div className="row">
-            <div className="col small-12 large-12">
+            <div className="col small-12 large-12 pb-0">
               <div className="col-inner">
                 Đá granite tự nhiên có độ cứng, độ bền cao cùng khả năng chịu
                 lực tốt. Bề mặt đá khá nhẵn và không bị trầy xước, nứt vỡ, biến
@@ -262,6 +262,7 @@ function App() {
             </div>
             <div className="col small-12 large-12">
               <div className="col-inner">
+                <p>- Dưới đây là hình ảnh thực tế tại kho xưởng của 9 màu cơ bản được sử dụng nhiều đất của đá Granite, quý khách hàng có thể xem hình ảnh thực tế để dể hình dung, ngoài ra còn hàng chục màu sắc khác nữa, quý khách hàng có nhu cầu vui lòng liên hệ trực tiếp Hotline: <a href="tel:0908333111"><b>0908.333.111</b></a> để được tư vấn.</p>
                 <div className="row equalize-box large-columns-4 medium-columns-3 small-columns-2 row-small has-shadow row-box-shadow-1 row-box-shadow-2-hover">
                   {granite.map((item, idx) => (
                     <TypeItem key={idx} title={item.title} img={item.img} />
@@ -272,18 +273,163 @@ function App() {
           </div>
           <Title title="ĐÁ MARBLE" ref={marbleSection} />
           <div className="row">
-            <div className="col small-12 large-12">
+            <div className="col small-12 large-12 pb-0">
               <div className="col-inner">
-                <ul className="mb-0">
-                  <li>Thông tin về đá Marble</li>
-                  <li>Ưu</li>
-                  <li>Nhược</li>
-                  <li>Ứng dụng</li>
+                <p>
+                  Đá Marble hay còn được gọi là đá cẩm thạch, một loại đá vôi
+                  được biến chất. Với thành phần chủ yếu là canxit (một dạng
+                  tinh thể của canxi cacbonat, CaCO3). ATC Stone với hơn 1000+
+                  Mẫu đá marble cao cấp nhập khẩu từ các nước như: Italia,
+                  Brazil, Thổ Nhỹ Kỳ, Tây Ban Nha,… Nó được sử dụng rộng rãi cho
+                  điêu khắc, như một vật liệu xây dựng, và trong nhiều ứng dụng
+                  nội thất ngoại thất khác.
+                </p>
+                <p>
+                  Đá Marble có tính chất xốp, mềm và dễ thấm nước hơn so với đá
+                  Granite. Vì thế, nếu không xử lý chống thấm kỹ càng về lâu dài
+                  sẽ thấm nước, dính bụi bẩn và chuyển màu, mất đi vẻ đẹp ban
+                  đầu. Ngoài ra về mặt thi công cũng khó hơn vì rất dễ vỡ, mẻ và
+                  khó tìm sản phẩm tương đồng nên giá thi công cao hơn so với đá
+                  Granite.
+                </p>
+                <b>Đặc điểm đá Marble tự nhiên</b>
+                <ul className="list-none">
+                  <li>
+                    <b>- Vân đá:</b>
+                    <p>
+                      Đá cẩm thạch với các đường vân khác nhau, chạy không theo
+                      quy luật nào trên bề mặt slab đá. Đường vân mềm mại như
+                      những bức tranh được thiên nhiên tạo thành thu hút mọi ánh
+                      nhìn và mang đến vẻ đẹp cho không gian. Mỗi tấm đá cắt ra
+                      đều là duy nhất, không trộn lẫn vì chất vân có một không
+                      hai. Tức là Quý Khách rất khó có thể tìm đựơc hai tấm đá
+                      có đường vân và hoa tiết giống nhau hoàn toàn.
+                    </p>
+                  </li>
+                  <li>
+                    <b>- Màu sắc :</b>
+                    <p>
+                      Với sự nổi trội về màu sắc đa dạng như : Trắng, kem, đen,
+                      xanh, vàng,… Nhờ sự đa dạng mà Quý Khách có nhiều sự lựa
+                      chọn cho Công trình của mình.
+                    </p>
+                  </li>
+                  <li>
+                    <b>- Độ chống thấm :</b>
+                    <p>
+                      Tuỳ vào từng mẫu đá mà chúng có độ chống thấm khác nhau.
+                      Có những mẫu đá Marble có khả năng chấm thấm tốt nhưng có
+                      những mẫu đá không có khả năng chống thấm. Vì vậy khi Quý
+                      Khách lựa chọn Đá Marble nên lựa chọn đơn vị tư vấn uy
+                      tín. Đá Granite và Đá Thạch Anh chống thấm cao hơn so với
+                      đá marble. Tuy nhiên Quý Khách không cần quá lo lắng.
+                      Trước khi tấm đá được đưa vào thi công  ATC Stone sử dụng
+                      chống thấm Roxseal có nguồn gốc từ Đức. Đảm bảo khả năng
+                      chống thấm và bảo vệ tấm đá.
+                    </p>
+                  </li>
+                  <li>
+                    <b>- Độ cứng, độ bền :</b>
+                    <p>
+                      Chúng có độ cứng chỉ đứng sau kim cương và đá granite. Với
+                      độ bền thách thức với thời gian.
+                    </p>
+                  </li>
+                  <li>
+                    <b>- Chịu nhiệt :</b>
+                    <p>
+                      Với khả năng chống lửa tốt nên nó đảm bảo trước các mối
+                      nguy về an toàn cháy nổ.
+                    </p>
+                  </li>
+                </ul>
+                <b>Ứng dụng của đá Marble cao cấp</b>
+                <p>Với vân đá và màu sắc hết sức đa dạng và đẹp. Nên đá Marble phù
+                hợp với mọi phong cách kiến trúc hiện đại và cổ điển.</p>
+                <b>Ứng dụng trong nội thất</b>
+                <ul className="list-none">
+                  <li>
+                    <b>
+                      <i>- Đá ốp phòng khách :</i>
+                    </b>
+                    <p>
+                      Phòng khách là một không gian vô cùng quan trọng, được coi
+                      là "bộ mặt" của ngôi nhà. Vì vậy, Quý Khách bỏ rất nhiều
+                      tiền cùng công sức để đầu tư cho không gian này thiệt đặc
+                      biệt và xứng tầm. Vật liệu được sử dụng nhiều nhất phải kể
+                      đến đá Marble. Ngoài dùng để lót sàn còn có thể ốp tường
+                      hoặc tạo thành những bức tranh từ thiên nhiên có một không
+                      hai. Với màu sắc trung tính lại có các đường vân, hoa văn
+                      vô cùng độc đáo sẽ tạo sự ấm cúng, mới lạ nhưng không kém
+                      phần sang trọng cho cả không gian hiện đại hay mang hơi
+                      hướng cổ điển. Một mẫu đá ghép hoa văn bài trí ngay giữa
+                      phòng khách hay mảng tường ốp đá marble với các đường vân
+                      xuyên suốt sống động kết hợp cùng nền đá marble sẽ tăng
+                      thêm sự đa dạng, hài hòa đẹp mắt cho không gian phòng
+                      khách.
+                    </p>
+                  </li>
+                  <li>
+                    <b>
+                      <i>- Đá ốp cầu thang :</i>
+                    </b>
+                    <p>
+                      Cầu thang được coi là thành phần quan trong nhất trong
+                      thiết kế nhà ở. Vật liệu đa dạng như hiện nay thì đá
+                      marble là sự lựa chọn tối ưu. Vì là loại đá có độ cứng
+                      cao, chịu được sự va chạm và các tác động, nên việc ốp đá
+                      sẽ đảm bảo được sự an toàn cho công trình. Không chỉ vậy,
+                      sử dụng đá marble còn giúp không gian sống trở nên ấn
+                      tượng hơn. Bởi sự đa dạng về màu sắc và hoa văn đá mang
+                      lại những cầu thang tràn đầy sức sống. Các loại đá Marble
+                      được sử dụng ưa chuộng cho cầu thang như : đá new grey
+                      light, Rosa light, Vân gỗ Ý,…
+                    </p>
+                  </li>
+                  <li>
+                    <b>
+                      <i>- Đá ốp nhà tắm :</i>
+                    </b>
+                    <p>
+                      Các biệt thự hay khách sạn, resort cao cấp ngày nay đều sử
+                      dụng đá marble ốp lát. Thiết kế phòng tắm ốp lát đá tự
+                      nhiên mang đến vẻ đẹp đẳng cấp, sang trọng cho không gian
+                      phòng tắm. Đồng thời, độ tương phản của loại đá này rất
+                      cao. Sử dụng đá ốp tường có màu sắc trang nhã nhẹ nhàng sẽ
+                      làm cho không gian phòng tắm rộng rãi, thoải mái hơn.
+                    </p>
+                  </li>
+                </ul>
+                <b>Ứng dụng trong ngoại thất</b>
+                <ul className="list-none">
+                  <li>
+                    <b>
+                      <i>- Đá ốp mặt tiền</i>
+                    </b>
+                    <p>
+                      Đá Marble đang trở thành xu hướng mới trong việc sử dụng
+                      đá tự nhiện ốp mặt tiền. Dòng đó này có những ưu điểm và
+                      những giá trị rất riêng làm cho gia chủ hay kiến trúc sư
+                      không ngần ngại lựa chọn ngay Đường vân đẹp và độc. Mỗi
+                      khối đá marble có các mảng vân lớn, liên tiếp nhau và
+                      không theo một quy tắc nhất định nào tạo ra những bức
+                      tranh sống động cho mặt tiền ngôi nhà của bạn. Đặc biệt,
+                      mỗi khối đá là một “tác phẩm” riêng biệt nên bạn không
+                      phải lo về khả năng “đụng hàng”, đảm bảo tính độc và lạ.
+                      Được tạo ra từ tự nhiên nên màu đá là bản chất nên chúng
+                      ta không phải lo về mưa, nhiệt độ, tia cực tím mặt trời,
+                      bụi bẩn,..đá marble ốp đá mặt tiền nhà vẫn giữ được vẻ đẹp
+                      theo thời gian. Ngoài ra đá marble cao cấp còn được sử
+                      dụng trang trí nội ngoại thất cho các khách sạn, cao ốc,
+                      quán karaoke,…
+                    </p>
+                  </li>
                 </ul>
               </div>
             </div>
             <div className="col small-12 large-12">
               <div className="col-inner">
+                <p>- Dưới đây là hình ảnh thực tế tại kho xưởng của 9 màu cơ bản được sử dụng nhiều đất của đá Marble, quý khách hàng có thể xem hình ảnh thực tế để dể hình dung, ngoài ra còn hàng chục màu sắc khác nữa, quý khách hàng có nhu cầu vui lòng liên hệ trực tiếp Hotline: <a href="tel:0908333111"><b>0908.333.111</b></a> để được tư vấn.</p>
                 <div className="row equalize-box large-columns-4 medium-columns-3 small-columns-2 row-small has-shadow row-box-shadow-1 row-box-shadow-2-hover">
                   {marble.map((item, idx) => (
                     <TypeItem key={idx} title={item.title} img={item.img} />
@@ -327,8 +473,8 @@ function App() {
               </div>
             </div>
           </div>
-          <Title title="CÔNG TRÌNH TIÊU BIỂU" />
-          <div className="row">
+          {/* <Title title="CÔNG TRÌNH TIÊU BIỂU" /> */}
+          {/* <div className="row">
             <div className="col small-12 large-12">
               <div className="col-inner">
                 <div className="row large-columns-4 medium-columns-1 small-columns-2 has-shadow row-box-shadow-1 row-box-shadow-2-hover">
@@ -341,7 +487,7 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <Title title="LIÊN HỆ" ref={contactSection} />
           <div className="row">
             <div className="col small-12 large-12">

@@ -34,11 +34,15 @@ export default function NewsItem({ title, date, desc, img, zoom }) {
               <h5 className="post-title is-large uppercase font-semibold">
                 {title}
               </h5>
-              <div className={`is-divider ${styles.divider}`} />
-              <p className="from_the_blog_excerpt text-sm">
-                {desc}
-                [...]
-              </p>
+              {desc && (
+                <>
+                  <div className={`is-divider ${styles.divider}`} />
+                  <p className="from_the_blog_excerpt text-sm">
+                    {desc}
+                    [...]
+                  </p>
+                </>
+              )}
             </div>
           </div>
           {date && (
