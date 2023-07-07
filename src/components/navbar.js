@@ -31,7 +31,7 @@ export default function Navbar(props) {
                     : ""
                 }
               >
-                <span className="p-2 cursor-pointer text-white uppercase">
+                <span className="p-2 cursor-pointer text-white uppercase inline-block">
                   {category.title}
                 </span>
               </li>

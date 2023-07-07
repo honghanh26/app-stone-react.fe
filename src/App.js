@@ -55,7 +55,7 @@ function App() {
         <div className="container mx-auto">
           <Title title="GIỚI THIỆU" ref={introSection} />
           <div className="row">
-            <div className="col small-12 large-12">
+            <div className="col small-12 large-12 pb-0">
               <div className="col-inner">
                 <h3>
                   NHỮNG ĐIỀU LÀM BẠN LO LẮNG KHI LỰA CHỌN ĐƠN VỊ THI CÔNG ĐÁ TỰ
@@ -260,7 +260,7 @@ function App() {
                 </ul>
               </div>
             </div>
-            <div className="col small-12 large-12">
+            <div className="col small-12 large-12 pb-0">
               <div className="col-inner">
                 <p>- Dưới đây là hình ảnh thực tế tại kho xưởng của 9 màu cơ bản được sử dụng nhiều đất của đá Granite, quý khách hàng có thể xem hình ảnh thực tế để dể hình dung, ngoài ra còn hàng chục màu sắc khác nữa, quý khách hàng có nhu cầu vui lòng liên hệ trực tiếp Hotline: <a href="tel:0908333111"><b>0908.333.111</b></a> để được tư vấn.</p>
                 <div className="row equalize-box large-columns-4 medium-columns-3 small-columns-2 row-small has-shadow row-box-shadow-1 row-box-shadow-2-hover">
@@ -427,7 +427,7 @@ function App() {
                 </ul>
               </div>
             </div>
-            <div className="col small-12 large-12">
+            <div className="col small-12 large-12 pb-0">
               <div className="col-inner">
                 <p>- Dưới đây là hình ảnh thực tế tại kho xưởng của 9 màu cơ bản được sử dụng nhiều đất của đá Marble, quý khách hàng có thể xem hình ảnh thực tế để dể hình dung, ngoài ra còn hàng chục màu sắc khác nữa, quý khách hàng có nhu cầu vui lòng liên hệ trực tiếp Hotline: <a href="tel:0908333111"><b>0908.333.111</b></a> để được tư vấn.</p>
                 <div className="row equalize-box large-columns-4 medium-columns-3 small-columns-2 row-small has-shadow row-box-shadow-1 row-box-shadow-2-hover">
@@ -457,7 +457,7 @@ function App() {
           </div>
           <Title title="DỊCH VỤ NGÀNH ĐÁ" ref={serviceSection} />
           <div className="row">
-            <div className="col small-12 large-12">
+            <div className="col small-12 large-12 pb-0">
               <div className="col-inner">
                 <div className="row large-columns-4 medium-columns-1 small-columns-2 has-shadow row-box-shadow-1 row-box-shadow-2-hover">
                   {serviceStone.map((item, idx) => (
@@ -490,7 +490,7 @@ function App() {
           </div> */}
           <Title title="LIÊN HỆ" ref={contactSection} />
           <div className="row">
-            <div className="col small-12 large-12">
+            <div className="col small-12 large-12 pb-0">
               <div className="col-inner">
                 <h3>
                   <b>ĐÁ ỐP CHÂU ÂU – THỂ HIỆN ĐẲNG CẤP NGÔI NHÀ BẠN !</b>

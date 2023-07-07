@@ -7,7 +7,7 @@ export default function TypeItem({ title, img }) {
         <div className="badge-container absolute left top z-1" />
         <div className="product-small box">
           <div className="box-image">
-            <div className="image-zoom">
+            <div className="image-zoom image-cover">
               {" "}
               <img
                 width={450}
@@ -22,7 +22,7 @@ export default function TypeItem({ title, img }) {
           </div>
           <div className="box-text box-text-products text-center grid-style-2">
             <div className="title-wrapper">
-              <p className="name product-title woocommerce-loop-product__title h-6">
+              <p className="name product-title woocommerce-loop-product__title h-6 font-bold">
                 {title}
               </p>
             </div>

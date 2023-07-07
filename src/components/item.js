@@ -4,7 +4,7 @@ export default function Item({ title, img }) {
   return (
     <div className="product-small box has-hover box-bounce box-text-bottom">
       <div className="box-image">
-        <div className="">
+        <div className="image-cover">
           {" "}
           <img
             width={450}
@@ -23,7 +23,7 @@ export default function Item({ title, img }) {
         style={{ backgroundColor: "rgb(236, 120, 40)" }}
       >
         <div className="title-wrapper">
-          <p className="name product-title woocommerce-loop-product__title h-5">
+          <p className="name product-title woocommerce-loop-product__title h-5 font-bold">
             {title}
           </p>
         </div>
